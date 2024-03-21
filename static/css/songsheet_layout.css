@@ -1,0 +1,27 @@
+p {
+    white-space: pre;
+}
+
+strong {
+    font-size: 17px;
+}
+
+#mainContainer {
+    grid-area: lyricchord;
+}
+
+#mainImageDiv {
+    grid-area: images;
+    text-align: center;
+}
+img {
+    width: 75px;
+    height: 80px;
+}
+
+#mainContainer {
+    display: grid;
+    grid-template-areas: 
+    'lyricchord images';
+    grid-column-gap: 2px;
+}

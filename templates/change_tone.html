@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/changetone.css') }}">
+    <title>Song</title>
+</head>
+<body>
+    
+    <h1>{{ msg[0] }}</h1>
+    <h3>Tono: {{ msg[2] }}</h3>
+
+    <br>
+
+    {% for x in range(chp|length) %}
+        <p>{{ chp[x] }}</p>
+        <strong>{{ ts['lirycs'][x] }}</strong>
+    {% endfor %}
+
+
+</body>
+</html>

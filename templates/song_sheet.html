@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/songsheet_layout.css') }}">
+    <title>Song</title>
+</head>
+<body>
+    <a href="{{ url_for('index') }}">Volver</a>
+
+    <div>
+        <form action="/change_tone" method="post">
+            <h1>{{ ts['name'] }}</h1>
+            <input type="text" value="{{ ts['name'] }}" name="song_name_id" hidden>
+
+            <h3>Tono: {{ ts['tone'] }}</h3>
+            <input type="text" value="{{ ts['tone'] }}" name="song_tone_id" hidden>
+
+            <select name="tones" id="id_tones">
+                <option value="Do">Do</option>
+                <option value="Do#">Do#</option>
+                <option value="Re">Re</option>
+                <option value="Re#">Re#</option>
+                <option value="Mi">Mi</option>
+                <option value="Fa">Fa</option>
+                <option value="Fa#">Fa#</option>
+                <option value="Sol">Sol</option>
+                <option value="Sol#">Sol#</option>
+                <option value="La">La</option>
+                <option value="La#">La#</option>
+                <option value="Si">Si</option>
+            </select>
+            <button type="submit">Cambiar</button>
+        </form>
+    </div>
+    
+    <div id="mainContainer">
+        <!-- DISPLAY CHORDS AND LIRYCS -->
+        <div id="lyricsChords">
+            {% if ts['chords']|length == ts['lirycs']|length %}
+                {% for x in range(ts['chords']|length) %}
+                        <p>{{ ts['chords'][x] }}</p>
+                    <strong>{{ ts['lirycs'][x] }}</strong>
+                {% endfor %}
+            {% endif %}
+        </div>
+        
+        <!-- DISPLAY CHORD IMAGES -->
+        <div id="mainImageDiv">
+            <p>Acordes</p>
+            {% for x in img %}
+                <img src="/static/css/chords/{{ x }}">
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>
