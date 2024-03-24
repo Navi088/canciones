@@ -34,10 +34,12 @@ def change_tones():
             sheet = hymn['song'][song_name.lower()]
             change_process = InputSong.inputs(song_name, tone_selected)
 
+            num = len(change_process)
+
             message = [song_name, song_tone, tone_selected]
             set_new_tones = change_process[-1]
        
-            return render_template('change_tone.html', msg=list(message), chp=change_process,
+            return render_template('change_tone.html', msg=list(message), chp=change_process[:num-1],
                                    ts=sheet, snt=set_new_tones)
 
     except:
