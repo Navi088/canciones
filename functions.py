@@ -14,6 +14,7 @@ class InputSong:
         blank_list = []
         slash_list = []
         final_product = []
+        get_tone_list = []
 
         for i in song_chords:
             # WORKS ON SLASHs
@@ -56,14 +57,19 @@ class InputSong:
         for cl in convert_list:
             send_tones = ChordFunctions.toner_converter(tone_song, new_tone, cl)
             result_list.append(send_tones)
-
-
+        
         # RETURNING SLASHEs
         returnList = []
         for element in result_list:
             splt = element[0].split(' ')
             returnList.append(splt)
 
+        # GETING TONES FOR THE LIST IMAGES
+        for i in returnList:
+            for x in i:
+                if x != '' and x not in get_tone_list:
+                    get_tone_list.append(x)
+        
         """ OUTPUT ***************************************************************"""
         # INSERT BLANK SPACES:
         for bl_index, tl in enumerate(target_list):
@@ -82,4 +88,5 @@ class InputSong:
             joined = " ".join(map(str, c))
             final_product.append(joined)
 
+        final_product.append(get_tone_list)
         return final_product

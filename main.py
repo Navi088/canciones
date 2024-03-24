@@ -35,10 +35,10 @@ def change_tones():
             change_process = InputSong.inputs(song_name, tone_selected)
 
             message = [song_name, song_tone, tone_selected]
-            
-
+            set_new_tones = change_process[-1]
        
-            return render_template('change_tone.html', msg=list(message), chp=change_process, ts=sheet)
+            return render_template('change_tone.html', msg=list(message), chp=change_process,
+                                   ts=sheet, snt=set_new_tones)
 
     except:
         message = "Change not detected"

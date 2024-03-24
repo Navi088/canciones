@@ -32,7 +32,6 @@ class ChordFunctions:
         indDecodBox = []
         namElemenBox = []
         sigElemenBox = []
-
         
         for li in listed:
             for ls in signList:
@@ -64,6 +63,7 @@ class ChordFunctions:
         dltBox = [] # contiene los elementos a sustituir
         newItem = [] # contiene la formacion de los nuevos elementos
         convBox = []
+        get_new_tone = []
 
         if mainOperation == True:
             if auto_bool == "yes":
@@ -85,8 +85,7 @@ class ChordFunctions:
                     for elem, sign in zip(convBox, sigElemenBox):
                         result = f"{elem}{sign}"
                         newItem.append(result)
-
-
+                    
                     for i in indDecodBox:
                         dlt = mainBox[i]
                         dltBox.append(dlt)
@@ -143,8 +142,7 @@ class ChordFunctions:
                     for elem, sign in zip(convBox, sigElemenBox):
                         result = f"{elem}{sign}"
                         newItem.append(result)
-
-
+                    
                     for i in indDecodBox:
                         dlt = mainBox[i]
                         dltBox.append(dlt)
@@ -158,10 +156,10 @@ class ChordFunctions:
 
                     for ib, sb in zip(indexs, strings):
                         mainBox.insert(ib, sb)
-                    
+
                     process_finished = " ".join(map(str, mainBox))
                     result_box.append(process_finished)
-                
+                    
                 except:
                     result_box.append('')
 

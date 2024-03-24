@@ -10,14 +10,25 @@
     
     <h1>{{ msg[0] }}</h1>
     <h3>Tono: {{ msg[2] }}</h3>
+    
+    <div id="mainContainer">
+        <!-- DISPLAY CHORDS AND LIRYCS -->
+        <div id="lyricsChords">
+            {% for x in range(chp|length) %}
+                <p>{{ chp[x] }}</p>
+                <strong>{{ ts['lirycs'][x] }}</strong>
+            {% endfor %}
+        </div>
 
-    <br>
+        <!-- DISPLAY CHORD IMAGES -->
+        <div id="mainImageDiv">
+            <p>Acordes</p>
+            {% for x in snt %}
+                <img src="/static/css/chords/{{ x }}.JPG">
+            {% endfor %}
+        </div>
 
-    {% for x in range(chp|length) %}
-        <p>{{ chp[x] }}</p>
-        <strong>{{ ts['lirycs'][x] }}</strong>
-    {% endfor %}
-
+    </div>
 
 </body>
 </html>
