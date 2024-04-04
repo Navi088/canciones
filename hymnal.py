@@ -8,9 +8,16 @@
 #     for x in range(r1):
 #         print (song['chords'][x])
 #         print (song['lirycs'][x])
+# 'name of the song': {
+#             'name': '',
+#             'tone': '',
+#             'lirycs': [],
+#             'chords': [],
+#             'chord_image': []
+#         }
 from chords_dict import all_chords
 
-hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
+hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS *** THE SYMBOL # WILL BE REPLACED BY A t
     'song': {
         'amor es':{
             'name': 'Amor es',
@@ -86,7 +93,8 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
                 '                   Rem/Sol                 Do',
             ],
             'chord_image': [
-                all_chords['Do'],all_chords['Do7'],all_chords['Rem'],all_chords['Mim'],all_chords['Fa'],all_chords['Sol'],all_chords['Lam']
+                all_chords['Do'],all_chords['Do7'],all_chords['Rem'],all_chords['Mim'],
+                all_chords['Fa'],all_chords['Sol'],all_chords['Lam']
             ]
         },
         'lo debes compartir': {
@@ -162,7 +170,8 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
                 '     Sol/La      Re   La'
             ],
             'chord_image': [
-                all_chords['Re'],all_chords['Mim'],all_chords['Fa#m'],all_chords['Sol'],all_chords['La'],all_chords['Sim']
+                all_chords['Re'],all_chords['Mim'],all_chords['FaSm'],
+                all_chords['Sol'],all_chords['La'],all_chords['Sim']
             ]
         },
         'el espiritu de dios esta': {
@@ -201,7 +210,8 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
                 '       La          Re/Re7      Sim'
             ],
             'chord_image': [
-                all_chords['Re'],all_chords['Re7'],all_chords['Mim'],all_chords['Fa#m'],all_chords['Sol'],all_chords['La'],all_chords['Sim']
+                all_chords['Re'],all_chords['Re7'],all_chords['Mim'],
+                all_chords['FaSm'],all_chords['Sol'],all_chords['La'],all_chords['Sim']
             ]
         },        
         'majestuoso': {
@@ -248,7 +258,7 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
                 '    Mim           La      Re'
             ],
             'chord_image': [
-                all_chords['Re'], all_chords['Re7'], all_chords['Mim'], all_chords['Fa#m'], 
+                all_chords['Re'], all_chords['Re7'], all_chords['Mim'], all_chords['FaSm'], 
                 all_chords['Sol'], all_chords['Si'], all_chords['Sim']
             ]
         },
@@ -329,7 +339,48 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
             ],
             'chord_image': [
                 all_chords['Do'], all_chords['Rem'], all_chords['Mim'], all_chords['Fa'], 
-                all_chords['Sol'],all_chords['La#'],all_chords['Lam']
+                all_chords['Sol'],all_chords['LaS'],all_chords['Lam']
+            ]
+        },
+        'vine a adorar a dios': {
+            'name': 'Vine a adorar a Dios',
+            'tone': 'La',
+            'lirycs': [
+                '// Vine a adorar a Dios',
+                'vine a adorar a Dios',
+                'vine a adorar su santo nombre',
+                'vine a adorar a Dios //',
+                ' ',
+                '*** Coro ***',
+                'El vino a mi vida',
+                'un dia muy especial',
+                'cambió mi corazon',
+                'me mostro su camino mejor',
+                'y esa es la razón',
+                'por la que canto hoy',
+                ' ',
+                '// Vine a adorar a Dios //'
+            ],
+            'chords': [
+                'La  Do#m  Fa#m',
+                'Re  Sim  Mi',
+                'La  Do#m  Fa#m',
+                'Re  Mi  La',
+                ' ',
+                ' ',
+                'Re  Mi',
+                'Do#m  Fa#m',
+                'Re  Mi',
+                'La  La7',
+                'Re  Mi',
+                'Do#m  Fa#m',
+                ' ',
+                'Re  Mi  La  Fa#m'
+            ],
+            'chord_image': [
+                all_chords['DoSm'], all_chords['Re'], all_chords['Mi'],
+                all_chords['FaSm'], all_chords['La'], all_chords['La7'],
+                all_chords['Si']
             ]
         }
     } # THE DICTIONARY ENDS HERE

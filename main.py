@@ -38,6 +38,10 @@ def change_tones():
 
             message = [song_name, song_tone, tone_selected]
             set_new_tones = change_process[-1]
+            
+            for x, y in enumerate(set_new_tones):
+                replace_symbol = str(y).replace("#","S")
+                set_new_tones[x] = replace_symbol
        
             return render_template('change_tone.html', msg=list(message), chp=change_process[:num-1],
                                    ts=sheet, snt=set_new_tones)
