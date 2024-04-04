@@ -25,3 +25,13 @@ img {
     'lyricchord images';
     grid-column-gap: 2px;
 }
+
+
+@media (max-width: 500px) {
+    #lyricsChords {
+        font-size: 13px;
+    }
+    strong {
+        font-size: 14px;
+    }
+}
