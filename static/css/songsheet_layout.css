@@ -15,8 +15,15 @@ strong {
     text-align: center;
 }
 img {
-    width: 75px;
-    height: 80px;
+    width: 80px;
+    height: 90px;
+}
+#pianoDiv #pianoChords {
+    width: 130px;
+}
+#bassDiv #bassChords {
+    width: 180px;
+    height: 450px;
 }
 
 #mainContainer {
@@ -29,6 +36,7 @@ img {
 @media (max-width: 500px) {
     #lyricsChords {
         font-size: 13px;
+        min-width: 310px;
     }
     strong {
         font-size: 14px;
