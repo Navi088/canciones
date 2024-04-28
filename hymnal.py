@@ -8,13 +8,15 @@
 #     for x in range(r1):
 #         print (song['chords'][x])
 #         print (song['lirycs'][x])
-# 'name of the song': {
-#             'name': '',
-#             'tone': '',
-#             'lirycs': [],
-#             'chords': [],
-#             'chord_image': []
-#         }
+"""
+        '': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        }
+"""
 from chords_dict import all_chords
 
 hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS *** THE SYMBOL # WILL BE REPLACED BY A t
@@ -381,6 +383,1193 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
                 all_chords['DoSm'], all_chords['Re'], all_chords['Mi'],
                 all_chords['FaSm'], all_chords['La'], all_chords['La7'],
                 all_chords['Si']
+            ]
+        },
+        'eres mi todo dios': {
+            'name': 'Eres mi todo Dios',
+            'tone': 'Mi',
+            'lirycs': [
+                'Eres mi fuerza y mi poder',
+                'el gran tesoro que busqué',
+                'eres mi todo Dios...',
+                ' ',
+                'Eres mi fuerza y mi poder',
+                'el gran tesoro que busqué',
+                'eres mi todo Dios...',
+                'Perla de precio sin igual',
+                'Nunca tu amor podré dejar',
+                'eres mi todo Dios...',
+                '*** Coro ***',
+                'Cristo Salvador, digno de adorar...',
+                'Cristo Redentor, digno de adorar',
+                ' ',
+                'Diste tu vida halla en la Cruz',
+                'resusitaste mi Jesús',
+                'eres mi todo Dios...',
+                'En sequedad o en tentacion',
+                'tu me sostienes mi Señor',
+                'eres mi todo Dios...',
+                ' ',
+                'Cristo Salvador, digno de adorar...',
+                'Cristo Redentor, digno de adorar.'
+            ],
+            'chords': [
+                'Mi  Fa#  Sol#  Fa#  Mi  Re#  Mi',
+                'Mi  Fa#  Sol#  Si  Mi  Re#  Do#',
+                'Do#  Re#  Mi  Mi  Re#  Mi  Fa#  Mi  Re#',
+                ' ',
+                'Mi  Si7  Do#m',
+                'Sol#m  La',
+                'Mi  Si7  Mi  Si7',
+                'Mi  Si7  Do#m',
+                'Sol#  La',
+                'Mi  Si7  Mi  Si7',
+                ' ',
+                'Mi  Si7  Do#m  Sol#m  La  Fa#m  Si7',
+                'Mi  Si7  Do#m  Sol#m  La  Si7  Mi  Si7',
+                ' ',
+                'Mi  Si7  Do#m',
+                'Sol#m  La',
+                'Mi  Si7  Mi  Si7',
+                'Si7  Do#m',
+                'Sol#m  La',
+                'Mi  Si7  Mi  Si7',
+                ' ',
+                'Mi  Si7  Do#m  Sol#m  La  Fa#m  Si7',
+                'Mi  Si7  Do#m  Sol#m  La  Si7  Mi'
+            ],
+            'chord_image': [
+                all_chords['DoS'],all_chords['DoSm'],all_chords['ReS'],all_chords['Mi'],
+                all_chords['FaS'],all_chords['FaSm'],all_chords['SolS'],all_chords['SolSm'],
+                all_chords['La'],all_chords['Si7']
+            ]
+        },
+        'agnus dei': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'ven espiritu ven': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'señor quien entrara': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'usa mi vida': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'que mi vida entera esté': {
+            'name': 'Que mi vida entera esté',
+            'tone': 'Do',
+            'lirycs': [
+                'Intro:',
+                ' ',
+                ' ',
+                'Que mi vida entera esté',
+                'consagrada a ti, Señor',
+                'que a mis manos pueda guiar',
+                'el impulso de tu amor',
+                ' ',
+                '*** Coro ***',
+                ' ',
+                'Lávame en tu sangre Salvador',
+                'limpiame de toda mi maldad',
+                'traigo a ti mi vida, para ser Señor',
+                'tuya por la eternidad',
+                ' ',
+                'Que mis pies tan sólo en pos',
+                'de lo santo puedan ir',
+                'y que, a Ti, Señor, mi voz',
+                'se complazca en bendecir',
+                ' ',
+                'Que mi tiempo todo esté',
+                'consagrado a tu loor',
+                'que mis labios al hablar',
+                'hablen sólo de tu amor',
+                ' ',
+                'Amen...'
+            ],
+            'chords': [
+                ' ',#intro
+                'Do  Fa  Do  Sol  Do',
+                ' ',
+                'Do                     Fa         Do',
+                'Rem           Sol            Do',
+                'Do7                                       Fa',
+                'Sol                            Do   Do7',
+                ' ',
+                ' ',#coro
+                ' ',
+                'Fa                       Sol            Mim',
+                'Fa                       Sol            Mim',
+                'Lam                  Mim    Do/Fa       Do',
+                'Mim      Sol              Do',
+                ' ',
+                'Do             Fa                        Do',
+                'Rem           Sol            Do',
+                'Do7                                       Fa',
+                'Sol                            Do   Do7',
+                ' ',
+                'Do              Fa                  Do',
+                'Rem           Sol            Do',
+                'Do7                                       Fa',
+                'Sol                            Do   Do7',
+                ' ',
+                'Fa     Do'
+            ],
+            'chord_image': [
+                all_chords['Do'],all_chords['Do7'],all_chords['Rem'],all_chords['Mim'],
+                all_chords['Fa'],all_chords['Sol'],all_chords['Lam']
+            ]
+        },
+        'quiero darte el honor': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'salmo 19 (la ley de jeova)': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'a jeova cantare en mi vida': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'solo en jesus': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        '10,000 razones': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'cuan grande es el': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'gozo por verte': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'tu mirada': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'mantos y palmas': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'nehemias 9': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'tierra de palestina': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'porque el vive': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'bendito jeova': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'cadena de coros': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'que me puede dar perdon': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dos o tres': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'en la cruz': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'saliendo del pretorio': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'creo en dios': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dios cuide tu semana': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'somos el pueblo de dios': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'la tumba le encerró': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'mas de ti cristo': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'hay momentos': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'bueno es alabar': {
+            'name': 'Bueno es alabar',
+            'tone': 'Sol',
+            'lirycs': [
+                'Bueno es alabar, oh Señor',
+                'tu nombre...',
+                'Darte gloria, honra y honor',
+                'por siempre...',
+                'Bueno es alabarte Jesús',
+                'y gozarme en tu poder',
+                ' ',
+                '*** Coro ***',
+                'Por que grande eres tú',
+                'grande son tus obras',
+                'Por que grande eres tú',
+                'grande es tu amor',
+                'grande es tu gloria'
+                ' ',
+                'Final:',
+                'Bueno es alabarte Señor...'
+            ],
+            'chords': [
+                'Sol              Do              Re',
+                'Do',
+                'Sol                   Do              Re',
+                'Do',
+                'Sol              Do              Re',
+                '        Mim                 Re',
+                ' ',
+                ' ',
+                '                 Sol       Do     Re',
+                'Sol         Do           Re',
+                '                 Sol       Do     Re',
+                '                        Mim',
+                '                         Re',
+                ' ',
+                'Sol             Do              Sol'
+            ],
+            'chord_image': []
+        },
+        'cuando llegue el final': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'eres limpio en la sangre': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'tu fidelidad es grande': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'abre mis ojos': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'a su tiempo': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'mi pensamiento eres tu señor': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'maravilloso es': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dulces melodias': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'cristo rompe las cadenas': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'estoy cantando alegre': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'oh ven y deleitate': {
+            'name': 'Oh ven y deleitate',
+            'tone': 'Do',
+            'lirycs': [
+                'Oh, oh, oh ven. Ven y',
+                'deléitate en el Señor',
+                'y Él te concederá las',
+                'peticiones de tu corazón',
+                ' ',
+                'Confía en El y Él te dará',
+                'Espera solo en El y Él hará',
+                ' ' 
+            ],
+            'chords': [
+                '   Do                      Fa',
+                '                  Do       Sol',
+                '    Do             Fa',
+                '    Do               Sol        Do',
+                ' ',
+                'Lam           Mim  Fa       Do',
+                'Lam           Mim  Fa       Sol',
+                '    Sol/Fa/Mim/Re'
+            ],
+            'chord_image': [
+                all_chords['Do'],all_chords['Re'],all_chords['Mim'],all_chords['Fa'],
+                all_chords['Sol'],all_chords['Lam']
+            ]
+        },
+        'aleluya': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'unidos': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'hacemos hoy': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dios manda lluvia': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'al que me ciñe de poder': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'el señor es mi pastor': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'manos cariñosas': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dios imparable': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'mas tu luz me guiara': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'cada dia': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'eres tu': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'renuevame': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'una noche fue': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'exaltad': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'brilla mas que el sol mi dios': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'el rey ya viene': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'aquí estoy': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'temprano yo te buscare': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'ese gozo que yo siento': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dios esta aquí': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'ya pertenesco a el': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'abres camino': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'la cancion del espiritu': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'quiero darte gracias': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'gloria te doy': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'setenta veces siete': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'la cosecha': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'quiero alabarte': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'junto a la cruz': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'gracias': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'yo te busco': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'llego la navidad': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'el regalo de dios': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'tu dejaste tu trono': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'alabanzas al rey': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        've dilo en las montañas': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'que niño es este': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'oh santisimo': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'noche de paz': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'muchas gracias señor': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'llename': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'yo me rindo a el': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'tu nombre levantare': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'quiero darte las gracias': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'debemos esperar': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'pastor siervo de dios': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'ofrendas de amor': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'el dios que adoramos': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'no dare': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'en el monte calvario': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'eres mi rey': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'la historia de cristo': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dios esta presente': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dilo a cristo': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'te necesito': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'enciende una luz': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'corazones siempre alegres': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'cerca mas cerca': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'firmes y adelante': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'siento su gloria': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'tu eres mi respirar': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'una linda cancion': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'yo tengo gozo': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'danos un bello hogar': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'tomados de la mano': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'cristo es el señor de las naciones': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'grande es tu fidelidad': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'dios no nos trajo hasta aquí': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'aleluya': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'te alabare mi buen jesus': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'cuan gloriosa sera la mañana': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        
+        
+        'cristo te amo': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'junto a ti mi buen señor': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'rey de gloria': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'se un ejemplo': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        '': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        'ayer cantaba y cantaba': {
+            'name': 'Ayer cantaba y cantaba',
+            'tone': 'Re',
+            'lirycs': [
+                'Intro:',
+                ' ',
+                ' ',
+                ' ',
+                ' ',
+                'Ayer cantaba y cantaba',
+                'porque me gustaba cantar',
+                'creia yo que mi canto',
+                'al mundo le iba a gustar',
+                'pero mi canto era hueco',
+                'pues Cristo no estaba en mi',
+                'pedí a El su presencia',
+                'y El me enseñó a cantar',
+                ' ',
+                '*** Coro ***',
+                '// Le canto a mi Cristo hoy',
+                'mañana tambien',
+                'Le canto en las noches',
+                'y al amanecer //',
+                ' ',
+                '*** Puente ***',
+                ' ',
+                'Hoy sigo cantando al mundo',
+                'pero con una misión',
+                'de darle mi testimonio',
+                'por medio de esta canción',
+                'ahora mi canto es grande',
+                'porque Cristo me salvó',
+                'pedí a El su presencia',
+                'y El me enseñó a cantar'
+            ],
+            'chords': [
+                ' ',
+                'Rem    Sol    Mim',
+                'Lam    Rem',
+                'Sol    Do',
+                ' ',
+                '                               Rem',
+                '      Sol                           Do',
+                '                              Rem',
+                '      Sol                       Do',
+                '        Do7                     Fa',
+                '        Sol                           Mim',
+                'Lam                   Rem',
+                '    Sol                       Do',
+                ' ',
+                ' ',
+                '           Do7             Fa        Sol',
+                '                   Mim          La7',
+                '                     Rem      Sol',
+                '                   Do7',
+                ' ',
+                ' ',
+                ' ',
+                '                              Rem',
+                '      Sol                Do',
+                '                            Rem',
+                '         Sol                      Do',
+                '  Do7                           Fa',
+                '                  Sol                Mim',
+                'Lam                   Rem',
+                '    Sol                        Do',
+                
+            ],
+            'chord_image': [
+                all_chords['Do'],all_chords['Do7'],all_chords['Rem'],all_chords['Mim'],
+                all_chords['Fa'],all_chords['Sol'],all_chords['Lam'],all_chords['La7']
+            ]
+        },
+        '': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        '': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        '': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+        '': {
+            'name': '',
+            'tone': '',
+            'lirycs': [],
+            'chords': [],
+            'chord_image': []
+        },
+    
+        'damelo señor damelo': {
+            'name': 'Damelo Señor damelo',
+            'tone': 'Do',
+            'lirycs': [
+                'Intro:',
+                ' ',
+                ' ',
+                ' ',
+                'Quiero Señor',
+                'que toques mi ser',
+                'con tu Espiritu Santo',
+                'que solo tu puedes dar',
+                'que solo de ti',
+                'puedo obtener',#10
+                ' ',
+                '*** Coro ***',
+                ' ',
+                '// Damelo Señor damelo...',
+                'llena mi ser de Ti,',
+                'Dame de tus bendiciones...',
+                'llena mi ser de Ti //',
+                ' ',
+                'Puente:',
+                ' ',
+                ' ',
+                ' ', # termina puente
+                'Dame Señor',
+                'quiero sentir ese fuego',
+                'quiero sentir tu llamado',
+                'quiero ser tuyo Señor',
+                ' ',
+                '*** Coro ***',
+                ' ',
+                '/// Llena mi ser de ti ///'
+            ],
+            'chords': [
+                ' ',
+                '/// Fa  Sol  Lam ///',
+                'Fa  Sol  Lam  Sol',
+                ' ',
+                'Do                     Mi7', #verso 1
+                '                          Lam',
+                '                               Re',
+                '                Fa               Do',
+                '                     Mi7',
+                '                     Lam',
+                ' ',
+                ' ',
+                ' ',
+                '    Fa            Sol       Do     Mi7',
+                '                         Lam',
+                'Fa                    Sol          Do     Mi7',
+                '                         Lam',
+                ' ',
+                ' ',
+                '//Fa Sol Lam//',
+                'Re Fa Mi7',
+                ' ',
+                'Do                      Mi7',
+                '              Lam             Do',
+                '              Fa                 Do',
+                '                 Mi7           Lam',
+                ' ',
+                ' ',
+                ' ',
+                '    Fa           Mi7      Lam'
+            ],
+            'chord_image': [
+                all_chords['Do'],all_chords['Re'],all_chords['Mi7'],all_chords['Fa'],
+                all_chords['Sol'],all_chords['Lam']
             ]
         }
     } # THE DICTIONARY ENDS HERE

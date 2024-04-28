@@ -178,5 +178,4 @@ class ChordFunctions:
                     result_box.append(process_finished)
                 except:
                     result_box.append('')
-        
         return result_box

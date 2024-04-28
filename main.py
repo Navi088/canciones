@@ -33,7 +33,7 @@ def change_tones():
 
             sheet = hymn['song'][song_name.lower()]
             change_process = InputSong.inputs(song_name, tone_selected)
-
+    
             num = len(change_process)
 
             message = [song_name, song_tone, tone_selected]
