@@ -8,15 +8,15 @@
 #     for x in range(r1):
 #         print (song['chords'][x])
 #         print (song['lirycs'][x])
-"""
-        '': {
-            'name': '',
-            'tone': '',
-            'lirycs': [],
-            'chords': [],
-            'chord_image': []
-        }
-"""
+
+        # '': {
+        #     'name': '',
+        #     'tone': '',
+        #     'lirycs': [],
+        #     'chords': [],
+        #     'chord_image': []
+        # }
+        
 from chords_dict import all_chords
 
 hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS *** THE SYMBOL # WILL BE REPLACED BY A t
