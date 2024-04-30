@@ -1,5 +1,11 @@
-p {
+#mychord {
     white-space: pre;
+    font-size: 20px;
+    color: red;
+}
+
+#mylyc {
+    font-size: 20px;
 }
 
 strong {
@@ -42,6 +48,7 @@ img {
         font-size: 14px;
     } */
     #mainImageDiv {
+        background-color: red;
         display: none;
     }
 }
