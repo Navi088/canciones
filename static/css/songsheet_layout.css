@@ -34,14 +34,14 @@ img {
 }
 
 @media (max-width: 500px) {
-    #lyricsChords {
+    /* #lyricsChords {
         font-size: 13px;
-        /* min-width: 310px; */
+        min-width: 310px;
     }
     strong {
         font-size: 14px;
-    }
-    /* #mainImageDiv {
-        display: none;
     } */
+    #mainImageDiv {
+        display: none;
+    }
 }
