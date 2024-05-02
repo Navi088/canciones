@@ -1,6 +1,26 @@
-button {
+/* button {
     background-color: transparent;
     border: none;
     text-align: left;
     cursor: pointer;
+} */
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ol {
+    padding: 0;
+}
+
+#myLi {
+    list-style: none;
+    color: transparent;
+    cursor: default;
+}
+
+.filtro {
+    display: none;
 }
