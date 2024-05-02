@@ -15,8 +15,8 @@
         <!-- DISPLAY CHORDS AND LIRYCS -->
         <div id="lyricsChords">
             {% for x in range(chp|length) %}
-                <p>{{ chp[x] }}</p>
-                <strong>{{ ts['lirycs'][x] }}</strong>
+                <p id="mychord">{{ chp[x] }}</p>
+                <p id="mylyc">{{ ts['lirycs'][x] }}</p>
             {% endfor %}
         </div>
 

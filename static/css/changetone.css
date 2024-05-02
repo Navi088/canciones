@@ -1,5 +1,12 @@
-p {
+#mychord {
     white-space: pre;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+#mylyc {
+    font-size: 20px;
 }
 
 strong {
@@ -33,13 +40,15 @@ img {
     grid-column-gap: 2px;
 }
 
-
 @media (max-width: 500px) {
-    #lyricsChords {
-        font-size: 13px;
+    #mainTheme {
+        font-size: 20px;
+    }
+    #mychord {
+        font-size: 16px;
         min-width: 310px;
     }
-    strong {
-        font-size: 14px;
+    #mylyc {
+        font-size: 16px;
     }
 }

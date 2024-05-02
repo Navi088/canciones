@@ -106,7 +106,7 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
                 'Con una sola chispa',
                 'se enciende un fuego',
                 'Y los de alrededor',
-                'caliéntanse muy luego',
+                'caliéntense muy luego',
                 ' ',
                 '*** Coro ***',
                 'Así es el amor de Dios',
