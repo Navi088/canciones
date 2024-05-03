@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #mychord {
     white-space: pre;
     font-size: 20px;

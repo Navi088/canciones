@@ -1,3 +1,13 @@
+body {
+    /* min-height: 100vh; */
+    background: url(/static/css/background_img/audifonos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
 button {
     border: none;
     background-color: transparent;
