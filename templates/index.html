@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index_layout.css') }}">
     <title>Et Ratzon</title>
+    <link rel="icon" href="/static/css/background_img/nota_logo.png">
 </head>
 <body>
 
@@ -180,7 +181,7 @@
         document.addEventListener('keyup', e => {
             if (e.target.matches('#buscador')){
                 document.querySelectorAll('.canciones').forEach(cancion =>{
-                    cancion.textContent.toLowerCase().includes(e.target.value)
+                    cancion.textContent.includes(e.target.value)
                     ? cancion.classList.remove('filtro')
                     : cancion.classList.add('filtro');
                 })
