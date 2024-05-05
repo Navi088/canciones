@@ -1411,7 +1411,7 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
                 'Lam  Fa',
                 'Do/Mi  Lam',
                 ' ',
-                'La                                Fa',
+                'Lam                               Fa',
                 'Do/Mi                  Lam',
                 '                                         Fa',
                 'Do/Mi                   Lam',
@@ -1493,11 +1493,55 @@ hymn = { # FOR EACH LETTER OF LIRYCS YOU HAVE TO GIVE 2-4 BLANK SPACES IN CHORDS
             'chord_image': []
         },
         'tomados de la mano': {
-            'name': '',
-            'tone': '',
-            'lirycs': [],
-            'chords': [],
-            'chord_image': []
+            'name': 'Tomados de la mano',
+            'tone': 'Fa',
+            'lirycs': [
+                'Intro: (Piano)',
+                ' ',
+                ' ',
+                'Tomado de la mano con El yo voy',
+                'Tomado de la mano con El yo voy',
+                'Tomado de la mano con El yo voy',
+                'A donde El va',
+                '******** Coro ********',
+                '// Si Jesús me dice amigo',
+                'deja todo y ven conmigo',
+                'yo mi mano pongo en la suya',
+                'y voy con El //'
+                ' ',
+                '(Estrofa 1)',
+                '*** Repite Coro ***',
+                'Tomados de la mano vamos con El',
+                'Tomados de la mano vamos con El',
+                'Tomados de la mano vamos con El',
+                'A donde El va',
+                '*** Termina con Coro ***'
+            ],
+            'chords': [
+                ' ',
+                'Fa    Sol    Mim    Lam    Rem    Sol    Do',
+                ' ',
+                '                           Fa                   Sol',
+                '                           Mim                   Lam',
+                '                           Rem                   Sol',
+                '        Do/Do7',
+                ' ', #CORO
+                '             Fa                   Sol',
+                '            Mi                 Lam',
+                '              Rem                     Sol',
+                '               Do/Do7',
+                ' ',
+                ' ',
+                '                            Fa                   Sol',
+                '                           Mim                   Lam',
+                '                           Rem                   Sol',
+                '                   Do/Do7',
+                ' '
+            ],
+            'chord_image': [
+                all_chords['Do'],all_chords['Do7'],all_chords['Rem'],all_chords['Mim'],
+                all_chords['Fa'],all_chords['Sol'],all_chords['Lam']
+            ]
         },
         'cristo es el señor de las naciones': {
             'name': '',
