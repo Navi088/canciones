@@ -7,75 +7,77 @@
     <title>Song</title>
 </head>
 <body>
-    <a href="{{ url_for('index') }}">Volver</a>
 
-    <div>
-        <form action="/change_tone" method="post">
-            <h1 id="mainTheme">{{ ts['name'] }}</h1>
-            <input type="text" value="{{ ts['name'] }}" name="song_name_id" hidden>
+    <div class="body-container">
+        <a class="back-btn" href="{{ url_for('index') }}">Volver</a>
 
-            <h3>Tono: {{ ts['tone'] }}</h3>
-            <input type="text" value="{{ ts['tone'] }}" name="song_tone_id" hidden>
+        <div>
+            <form action="/change_tone" method="post">
+                <h1 id="mainTheme">{{ ts['name'] }}</h1>
+                <input type="text" value="{{ ts['name'] }}" name="song_name_id" hidden>
 
-            <select name="tones" id="id_tones">
-                <option value="Do">Do</option>
-                <!-- <option value="Do#">Do#</option> -->
-                <option value="Re">Re</option>
-                <!-- <option value="Re#">Re#</option> -->
-                <option value="Mi">Mi</option>
-                <option value="Fa">Fa</option>
-                <!-- <option value="Fa#">Fa#</option> -->
-                <option value="Sol">Sol</option>
-                <!-- <option value="Sol#">Sol#</option> -->
-                <option value="La">La</option>
-                <!-- <option value="La#">La#</option> -->
-                <option value="Si">Si</option>
-            </select>
-            <button type="submit">Cambiar</button>
-        </form>
-    </div>
+                <h3>Tono: {{ ts['tone'] }}</h3>
+                <input type="text" value="{{ ts['tone'] }}" name="song_tone_id" hidden>
 
-    <br>
-    
-    <div id="mainContainer">
-        <!-- DISPLAY CHORDS AND LIRYCS -->
-        <div id="lyricsChords">
-            {% if ts['chords']|length == ts['lirycs']|length %}
-                {% for x in range(ts['chords']|length) %}
-                        <p id="mychord">{{ ts['chords'][x] }}</p>
-                    <p id="mylyc">{{ ts['lirycs'][x] }}</p>
-                {% endfor %}
-            {% endif %}
+                <select name="tones" id="id_tones">
+                    <option value="Do">Do</option>
+                    <!-- <option value="Do#">Do#</option> -->
+                    <option value="Re">Re</option>
+                    <!-- <option value="Re#">Re#</option> -->
+                    <option value="Mi">Mi</option>
+                    <option value="Fa">Fa</option>
+                    <!-- <option value="Fa#">Fa#</option> -->
+                    <option value="Sol">Sol</option>
+                    <!-- <option value="Sol#">Sol#</option> -->
+                    <option value="La">La</option>
+                    <!-- <option value="La#">La#</option> -->
+                    <option value="Si">Si</option>
+                </select>
+                <button type="submit">Cambiar</button>
+            </form>
         </div>
+
+        <br>
         
-        <!-- DISPLAY CHORD IMAGES -->
-        <div id="mainImageDiv">
-            <p>Acordes</p>
-            <select name="" id="idSelect" onchange="selectGuitar()">
-                <option value="Clear">Instrumento</option>
-                <option value="Guitar">Guitarra</option>
-                <option value="Piano">Piano</option>
-                <option value="Bass">Bajo</option>
-            </select>
-
-            <div id="guitarDiv" style="display: none;">
-                {% for x in img %}
-                    <img src="/static/css/guitar_chords/{{ x }}">
-                {% endfor %}
+        <div id="mainContainer">
+            <!-- DISPLAY CHORDS AND LIRYCS -->
+            <div id="lyricsChords">
+                {% if ts['chords']|length == ts['lirycs']|length %}
+                    {% for x in range(ts['chords']|length) %}
+                            <p id="mychord">{{ ts['chords'][x] }}</p>
+                        <p id="mylyc">{{ ts['lirycs'][x] }}</p>
+                    {% endfor %}
+                {% endif %}
             </div>
+            
+            <!-- DISPLAY CHORD IMAGES -->
+            <div id="mainImageDiv">
+                <p>Acordes</p>
+                <select name="" id="idSelect" onchange="selectGuitar()">
+                    <option value="Clear">Instrumento</option>
+                    <option value="Guitar">Guitarra</option>
+                    <option value="Piano">Piano</option>
+                    <option value="Bass">Bajo</option>
+                </select>
 
-            <div id="pianoDiv" style="display: none;">
-                {% for x in img %}
-                    <img src="/static/css/piano_chords/{{ x }}" id="pianoChords">
-                {% endfor %}
-            </div>
+                <div id="guitarDiv" style="display: none;">
+                    {% for x in img %}
+                        <img src="/static/css/guitar_chords/{{ x }}">
+                    {% endfor %}
+                </div>
 
-            <div id="bassDiv" style="display: none;">
-                <img src="/static/css/bass_chords/bass.JPG" id="bassChords">
+                <div id="pianoDiv" style="display: none;">
+                    {% for x in img %}
+                        <img src="/static/css/piano_chords/{{ x }}" id="pianoChords">
+                    {% endfor %}
+                </div>
+
+                <div id="bassDiv" style="display: none;">
+                    <img src="/static/css/bass_chords/bass.JPG" id="bassChords">
+                </div>
             </div>
         </div>
     </div>
-
     <!-- SCRIPTS -->
     <script>
         function selectGuitar () {

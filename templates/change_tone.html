@@ -7,51 +7,52 @@
     <title>Song</title>
 </head>
 <body>
-    <a href="{{ url_for('index') }}">Volver</a>
-    
-    <h1>{{ msg[0] }}</h1>
-    <h3>Tono: {{ msg[2] }}</h3>
+    <div class="body-container">
+        <a class="back-btn" href="{{ url_for('index') }}">Volver</a>
+        
+        <h1>{{ msg[0] }}</h1>
+        <h3>Tono: {{ msg[2] }}</h3>
 
-    <br>
-    
-    <div id="mainContainer">
-        <!-- DISPLAY CHORDS AND LIRYCS -->
-        <div id="lyricsChords">
-            {% for x in range(chp|length) %}
-                <p id="mychord">{{ chp[x] }}</p>
-                <p id="mylyc">{{ ts['lirycs'][x] }}</p>
-            {% endfor %}
-        </div>
-
-        <!-- DISPLAY CHORD IMAGES -->
-        <div id="mainImageDiv">
-            <p>Acordes</p>
-            <select name="" id="idSelect" onchange="selectGuitar()">
-                <option value="Clear">Instrumento</option>
-                <option value="Guitar">Guitarra</option>
-                <option value="Piano">Piano</option>
-                <option value="Bass">Bajo</option>
-            </select>
-
-            <div id="guitarDiv" style="display: none;">
-                {% for x in snt %}
-                    <img src="/static/css/guitar_chords/{{ x }}.JPG">
+        <br>
+        
+        <div id="mainContainer">
+            <!-- DISPLAY CHORDS AND LIRYCS -->
+            <div id="lyricsChords">
+                {% for x in range(chp|length) %}
+                    <p id="mychord">{{ chp[x] }}</p>
+                    <p id="mylyc">{{ ts['lirycs'][x] }}</p>
                 {% endfor %}
             </div>
 
-            <div id="pianoDiv" style="display: none;">
-                {% for x in snt %}
-                    <img src="/static/css/piano_chords/{{ x }}.JPG"  id="pianoChords">
-                {% endfor %}
+            <!-- DISPLAY CHORD IMAGES -->
+            <div id="mainImageDiv">
+                <p>Acordes</p>
+                <select name="" id="idSelect" onchange="selectGuitar()">
+                    <option value="Clear">Instrumento</option>
+                    <option value="Guitar">Guitarra</option>
+                    <option value="Piano">Piano</option>
+                    <option value="Bass">Bajo</option>
+                </select>
+
+                <div id="guitarDiv" style="display: none;">
+                    {% for x in snt %}
+                        <img src="/static/css/guitar_chords/{{ x }}.JPG">
+                    {% endfor %}
+                </div>
+
+                <div id="pianoDiv" style="display: none;">
+                    {% for x in snt %}
+                        <img src="/static/css/piano_chords/{{ x }}.JPG"  id="pianoChords">
+                    {% endfor %}
+                </div>
+
+                <div id="bassDiv" style="display: none;">
+                    <img src="/static/css/bass_chords/bass.JPG" id="bassChords">
+                </div>
             </div>
 
-            <div id="bassDiv" style="display: none;">
-                <img src="/static/css/bass_chords/bass.JPG" id="bassChords">
-            </div>
         </div>
-
     </div>
-
     <!-- SCRIPTS -->
     <script>
         function selectGuitar () {
